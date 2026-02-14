@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>RutiWay Privacy Policy</title>
+    <script>
+        // Detectar idioma del navegador y redirigir
+        const userLang = navigator.language || navigator.userLanguage;
+        const lang = userLang.substring(0, 2).toLowerCase();
+        
+        const policyPages = {
+            'es': 'privacy-policy-es.html',
+            'ca': 'privacy-policy-ca.html',
+            'fr': 'privacy-policy-fr.html',
+            'pt': 'privacy-policy-pt.html',
+            'it': 'privacy-policy-it.html',
+            'en': 'privacy-policy-en.html'
+        };
+        
+        // Redirigir al idioma detectado o inglés por defecto
+        const targetPage = policyPages[lang] || 'privacy-policy-en.html';
+        window.location.href = targetPage;
+    </script>
+</head>
+<body>
+    <p>Redirecting to Privacy Policy...</p>
+    <p>Redirigiendo a Política de Privacidad...</p>
+</body>
+</html>
